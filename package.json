@@ -20,11 +20,16 @@
     "word-wizard": "file:"
   },
   "devDependencies": {
-    "eslint": "^8",
+    "@eslint/js": "^9.13.0",
+    "eslint": "^8.57.1",
     "eslint-config-next": "15.0.1",
+    "eslint-plugin-jsdoc": "^50.4.3",
+    "eslint-plugin-react": "^7.37.2",
     "gh-pages": "^6.2.0",
+    "globals": "^15.11.0",
     "husky": "^9.1.6",
     "jest-environment-jsdom": "^29.7.0",
+    "jsdoc": "^4.0.4",
     "lint-staged": "^15.2.10",
     "postcss": "^8",
     "prettier": "3.3.3",
