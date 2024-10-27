@@ -10,7 +10,8 @@
     "deploy": "gh-pages -d out",
     "test": "jest --watchAll=false",
     "lint": "next lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "next": "15.0.1",
@@ -23,6 +24,7 @@
     "eslint-config-next": "15.0.1",
     "gh-pages": "^6.2.0",
     "husky": "^9.1.6",
+    "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.2.10",
     "postcss": "^8",
     "prettier": "3.3.3",

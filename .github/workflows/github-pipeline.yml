@@ -27,6 +27,9 @@ jobs:
       - name: Run lint
         run: npm run lint
 
+      - name: Run format
+        run: npm run prettier
+
       - name: Run tests
         run: npx jest --coverage
 
