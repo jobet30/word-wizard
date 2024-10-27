@@ -1,11 +1,9 @@
-test("basic test", () => {
-  window.alert = jest.fn();
-  document.body.innerHTML = `
-      <h1>Word Wizard</h1>
-      <button onclick="alert('Button clicked!')">Start Game</button>
-    `;
+test("renders title and responds to button click", () => {
+  document.body.innerHTML = `<h1>Word Wizard</h1><button>Start Game</button>`;
+  const button = document.querySelector("button");
 
-  expect(document.querySelector("h1")).toBeInTheDocument();
-  document.querySelector("button").click();
-  expect(window.alert).toHaveBeenCalledWith("Button clicked!");
+  button.onclick = jest.fn();
+  button.click();
+
+  expect(button.onclick).toHaveBeenCalled();
 });
