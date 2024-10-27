@@ -8,6 +8,7 @@
     "start": "next start",
     "predeploy": "npm run build && npm run export",
     "deploy": "gh-pages -d out",
+    "test": "jest",
     "lint": "next lint",
     "prepare": "husky"
   },
